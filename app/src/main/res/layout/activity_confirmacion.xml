@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_confirmacion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leotoscana.formulariocontactos.Confirmacion">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Confirmar"
+        android:textSize="@dimen/tamaño_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:orientation="horizontal"
+        android:id="@+id/nombreDos"
+        android:layout_marginTop="@dimen/margen_editext"
+        android:layout_marginLeft="@dimen/margen_editext">
+        <TextView
+            android:id="@+id/nomb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Nombre"
+            android:textSize="@dimen/tamaño_text"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fechaDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombreDos"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margen_editext"
+        android:layout_marginLeft="@dimen/margen_editext">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Fecha"
+            android:textSize="@dimen/tamaño_textConfirmacion"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/tamaño_textConfirmacion"
+            android:layout_marginLeft="@dimen/margen_editext"
+            android:id="@+id/fech"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/telefonoDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fechaDos"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margen_editext"
+        android:layout_marginLeft="@dimen/margen_editext">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Telefono"
+            android:textSize="@dimen/tamaño_textConfirmacion"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/tamaño_textConfirmacion"
+            android:layout_marginLeft="@dimen/margen_editext"
+            android:id="@+id/tel"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/emailDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telefonoDos"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margen_editext"
+        android:layout_marginLeft="@dimen/margen_editext">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Email"
+            android:textSize="@dimen/tamaño_textConfirmacion"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/tamaño_textConfirmacion"
+            android:layout_marginLeft="@dimen/margen_editext"
+            android:id="@+id/em"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/descripcionDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailDos"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margen_editext"
+        android:layout_marginLeft="@dimen/margen_editext">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Descripcion"
+            android:textSize="@dimen/tamaño_textConfirmacion"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/tamaño_textConfirmacion"
+            android:layout_marginLeft="@dimen/margen_editext"
+            android:id="@+id/descr"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descripcionDos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/button2"
+        android:text="@string/Editar"
+        android:textSize="@dimen/tamaño_textConfirmacion"
+        android:paddingLeft="@dimen/margen_editext"
+        android:paddingRight="@dimen/margen_editext"
+        android:background="@color/colorAccent"/>
+
+
+</RelativeLayout>
